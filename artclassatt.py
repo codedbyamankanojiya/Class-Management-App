@@ -739,7 +739,7 @@ def show_student_profile(roll_no):
     header.pack(pady=(0, 20))
     
     # Details frame
-    details_frame = tb.LabelFrame(main_frame, text="Student Details", padding=15)
+    details_frame = tb.Labelframe(main_frame, text="Student Details", padding=15)
     details_frame.pack(fill='x', pady=(0, 20))
     
     details = [
@@ -758,7 +758,7 @@ def show_student_profile(roll_no):
         tb.Label(row, text=str(value), font=("Helvetica", 11)).pack(side='left', padx=(10, 0))
     
     # Attendance History
-    history_frame = tb.LabelFrame(main_frame, text="Recent Attendance", padding=15)
+    history_frame = tb.Labelframe(main_frame, text="Recent Attendance", padding=15)
     history_frame.pack(fill='both', expand=True)
     
     tree = ttk.Treeview(history_frame, columns=("Date", "Status"), show='headings')
@@ -1208,7 +1208,7 @@ create_stat_card(stats_frame, f"Pending Fees (₹{pending_fees:,.0f})",
                 f"{pending_fees:,.0f}", "💰", "warning")
 
 # Recent Activity Section
-activity_frame = tb.LabelFrame(dashboard_container, text="📋 Recent Activity", 
+activity_frame = tb.Labelframe(dashboard_container, text="📋 Recent Activity", 
                               padding=20, bootstyle="info")
 activity_frame.pack(fill='both', expand=True, pady=(0, 10))
 
@@ -1381,7 +1381,7 @@ right_panel = tb.Frame(main_container)
 right_panel.pack(side='right', fill='both', expand=True, padx=(10, 0))
 
 # Mark Attendance Section (Left Panel)
-frame_attendance = tb.LabelFrame(left_panel, text="Quick Attendance", 
+frame_attendance = tb.Labelframe(left_panel, text="Quick Attendance", 
                                padding=15, bootstyle="primary")
 frame_attendance.pack(fill='x', pady=(0, 10))
 
@@ -1397,7 +1397,7 @@ btn_mark = tb.Button(frame_attendance, text="Mark Attendance",
 btn_mark.pack(pady=5)
 
 # Add Student Section (Left Panel)
-frame_add = tb.LabelFrame(left_panel, text="Add New Student", 
+frame_add = tb.Labelframe(left_panel, text="Add New Student", 
                          padding=15, bootstyle="primary")
 frame_add.pack(fill='x', pady=10)
 
@@ -1501,7 +1501,7 @@ btn_add = tb.Button(frame_add, text="Add Student",
 btn_add.pack(pady=10)
 
 # View Frame for Students (Right Panel)
-view_frame = tb.LabelFrame(right_panel, text="Student Records", 
+view_frame = tb.Labelframe(right_panel, text="Student Records", 
                           padding=15, bootstyle="primary")
 
 # Report Buttons
@@ -1577,7 +1577,7 @@ att_header = tb.Label(attendance_container,
 att_header.pack(pady=(0, 20))
 
 # Quick Mark Attendance
-quick_att_frame = tb.LabelFrame(attendance_container, text="Quick Mark Attendance", 
+quick_att_frame = tb.Labelframe(attendance_container, text="Quick Mark Attendance", 
                                padding=20, bootstyle="success")
 quick_att_frame.pack(fill='x', pady=(0, 20))
 
@@ -1635,7 +1635,7 @@ tb.Button(att_input_frame, text="Mark Present",
          bootstyle="success", width=15).pack(side='left', padx=5)
 
 # Today's Attendance Display
-today_att_frame = tb.LabelFrame(attendance_container, text=f"Today's Attendance ({datetime.now().strftime('%d %B %Y')})", 
+today_att_frame = tb.Labelframe(attendance_container, text=f"Today's Attendance ({datetime.now().strftime('%d %B %Y')})", 
                                padding=20, bootstyle="info")
 today_att_frame.pack(fill='both', expand=True)
 
@@ -1683,7 +1683,7 @@ report_cards_frame = tb.Frame(reports_container)
 report_cards_frame.pack(fill='x', pady=(0, 20))
 
 def create_report_card(parent, title, description, command, color):
-    card = tb.LabelFrame(parent, text=title, padding=20, bootstyle=color)
+    card = tb.Labelframe(parent, text=title, padding=20, bootstyle=color)
     card.pack(side='left', fill='both', expand=True, padx=10)
     
     tb.Label(card, text=description, 
@@ -1740,7 +1740,7 @@ def generate_financial_report():
                 bootstyle=color).pack(pady=5)
     
     # Detailed list
-    detail_frame = tb.LabelFrame(main_frame, text="Student Fees Details", padding=15)
+    detail_frame = tb.Labelframe(main_frame, text="Student Fees Details", padding=15)
     detail_frame.pack(fill='both', expand=True)
     
     tree = ttk.Treeview(detail_frame, 
@@ -1801,7 +1801,7 @@ for label, value, color in fees_stats:
             bootstyle=color).pack()
 
 # Pending fees list
-pending_frame = tb.LabelFrame(fees_container, text="Students with Pending Fees", 
+pending_frame = tb.Labelframe(fees_container, text="Students with Pending Fees", 
                              padding=20, bootstyle="warning")
 pending_frame.pack(fill='both', expand=True)
 
