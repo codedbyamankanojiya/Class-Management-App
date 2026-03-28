@@ -4,8 +4,6 @@
 
 A comprehensive **Art Class Attendance & Management System** designed to streamline administrative workflows for art education providers. Built with Python and SQLite, this robust solution offers a modern tabbed interface with real-time analytics, professional payment tracking, and comprehensive reporting capabilities.
 
-### ✨ What's New in Version 2.0
-
 - **📊 Interactive Dashboard** with live statistics and recent activity
 - **🎯 Modern Tabbed Interface** for organized workflow
 - **💰 Enhanced Fees Management** with payment tracking and receipts
@@ -92,7 +90,7 @@ A comprehensive **Art Class Attendance & Management System** designed to streaml
 ```bash
 # Clone the repository
 git clone https://github.com/codedbyamankanojiya/Class-Management-App.git
-cd Attendance-System
+cd Class-Management-App
 
 # Install dependencies
 pip install -r requirements.txt
