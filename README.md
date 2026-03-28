@@ -91,7 +91,7 @@ A comprehensive **Art Class Attendance & Management System** designed to streaml
 ### Quick Start
 ```bash
 # Clone the repository
-git clone [your-repository-url]
+git clone https://github.com/codedbyamankanojiya/Class-Management-App.git
 cd Attendance-System
 
 # Install dependencies
@@ -178,12 +178,12 @@ To enable email notifications for receipts and reminders:
 
 ### Keyboard Shortcuts ⌨️
 
-| Shortcut | Action |
-|----------|--------|
+| Shortcut |         Action          |
+|----------|-------------------------|
 | `Ctrl+A` | View Today's Attendance |
 | `Ctrl+R` | Generate Monthly Report |
-| `Ctrl+F` | Focus Search Bar |
-| `Enter` | Submit current form |
+| `Ctrl+F` | Focus Search Bar        |
+| `Enter`  | Submit current form     |
 
 ### Pro Tips 💡
 
@@ -224,8 +224,8 @@ Attendance-System/
 ├── artclassatt.py          # Main application file
 ├── students_attendance.db  # SQLite database (auto-created)
 ├── requirements.txt        # Python dependencies
-├── README.md              # This file
-└── QUICK_START.md         # Quick start guide
+├── README.md               # This file
+└── QUICK_START.md          # Quick start guide
 ```
 
 ## 🐛 Troubleshooting
@@ -275,12 +275,10 @@ For support and questions:
 
 ---
 
-**Version**: 2.0 Enhanced  
-**Last Updated**: October 31, 2025  
+**Final Deployment**: October 31, 2025  
 **Status**: Production Ready ✅
 
 Developed by: Aman Kanojiya,
-https://amankanojiyaportfolio.vercel.app
-
+https://codedbyamankanojiya.vercel.app
 
 *Built with ❤️ for art educators and students*
